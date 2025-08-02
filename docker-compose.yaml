@@ -17,7 +17,9 @@ services:
       - "1883:1883"
       - "9001:9001"
     volumes:
-      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./config/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./config/mosquitto/passwdfile:/mosquitto/config/passwdfile
+      - ./config/mosquitto/aclfile:/mosquitto/config/aclfile
 
 volumes:
   pgdata:
