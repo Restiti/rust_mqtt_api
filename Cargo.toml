@@ -1,0 +1,12 @@
+[package]
+name = "rust_mqtt_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.8.6", features = ["postgres", "runtime-tokio-native-tls", "macros"] }
+tokio = { version = "1.37.0", features = ["full"] }
+dotenv = "0.15"
+rumqttc = "0.24.0"
+serde = { version = "1.0.219", features = ["derive"] }
+actix-web = "4.11.0"
